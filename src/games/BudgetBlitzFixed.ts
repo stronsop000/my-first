@@ -278,10 +278,17 @@ export class BudgetBlitzGame extends BaseGame {
 
     this.recreateButtons();
 
-    // Schedule next fluctuation
+    // Schedule next fluctuation by recreating the timer
     if (this.priceFluctuationTimer) {
-      this.priceFluctuationTimer.delay = Phaser.Math.Between(4000, 8000);
+      this.priceFluctuationTimer.destroy();
     }
+    
+    this.priceFluctuationTimer = this.time.addEvent({
+      delay: Phaser.Math.Between(4000, 8000),
+      callback: this.fluctuatePrices,
+      callbackScope: this,
+      loop: false, // Set to false since we recreate it each time
+    });
   }
 
   private endGameWithResults() {
