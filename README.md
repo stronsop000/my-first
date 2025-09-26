@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# Finance Arcade - Professional Finance Learning Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive, responsive web application that teaches finance concepts through interactive mini-games. Built with Next.js 14, TypeScript, Tailwind CSS, and modern web technologies.
 
-## Available Scripts
+## 🎮 Games Included
 
-In the project directory, you can run:
+### 1. NPV Builder
+- **Concept**: Time value of money, cash-flow discounting, NPV decision rule
+- **Mechanics**: Drag-and-drop cash flows, adjust discount rates, make investment decisions
+- **Levels**: 3 (Single project → Mutually exclusive → Capital rationing)
 
-### `npm start`
+### 2. Budget Battle
+- **Concept**: Budgeting, fixed vs variable costs, financial planning
+- **Mechanics**: Allocate monthly budget, handle random events, maintain savings goals
+- **Levels**: 5 rounds with increasing complexity
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 3. Elasticity Explorer
+- **Concept**: Price elasticity of demand, revenue optimization
+- **Mechanics**: Interactive demand curve, real-time elasticity calculation
+- **Levels**: 3 with progressive quest system
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Accessibility**: WCAG 2.1 AA compliant with keyboard navigation
+- **PWA Ready**: Installable with offline capabilities
+- **Game Engine**: Reusable architecture for easy game expansion
+- **Progress Tracking**: Local storage with export/import functionality
+- **Educational Analytics**: Learning objective tracking and mastery assessment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Tech Stack
 
-### `npm run build`
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript (strict mode)
+- **Styling**: Tailwind CSS + shadcn/ui components
+- **State Management**: Zustand with persistence
+- **Validation**: Zod schemas
+- **Icons**: Lucide React
+- **Build**: Next.js with optimized bundling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Quick Start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open [http://localhost:3000](http://localhost:3000) to start playing!
 
-### `npm run eject`
+## 🎯 Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Built with a modular game engine that supports:
+- Consistent UX across all games
+- Tutorial system with step-by-step guidance
+- Progress tracking and mastery assessment
+- Real-time state management with persistence
+- Accessibility-first design
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 PWA Support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Installable on mobile and desktop
+- Offline functionality for core features
+- App shortcuts for quick game access
+- Optimized performance (Lighthouse ≥ 90)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ready to deploy to Vercel or any modern hosting platform!
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+🎮 **Start Learning Finance Through Games!** - Professional, accessible, and engaging finance education.

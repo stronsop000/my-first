@@ -1,25 +1,50 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Finance Arcade - Learn Finance Through Games",
+  "short_name": "Finance Arcade",
+  "description": "Master finance concepts through interactive mini-games. Learn NPV, budgeting, and elasticity in a fun, engaging way.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "categories": ["education", "finance", "games"],
+  "lang": "en-US",
+  "scope": "/",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
     },
     {
-      "src": "logo192.png",
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "maskable any"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "shortcuts": [
+    {
+      "name": "NPV Builder",
+      "short_name": "NPV Game",
+      "description": "Learn time value of money through NPV calculations",
+      "url": "/games/npv-builder",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Budget Battle",
+      "short_name": "Budget Game",
+      "description": "Master budgeting skills with realistic constraints",
+      "url": "/games/budget-battle",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Elasticity Explorer",
+      "short_name": "Elasticity Game",
+      "description": "Explore price elasticity through demand curves",
+      "url": "/games/elasticity-explorer",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
 }
