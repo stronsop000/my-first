@@ -11,7 +11,10 @@
       "Bash(find:*)",
       "Bash(dir)",
       "Bash(powershell:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
