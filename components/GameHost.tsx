@@ -1,13 +1,13 @@
 'use client';
 
 import React, { useEffect, useCallback } from 'react';
-import { GameDefinition, GameState, GameEvent } from '@/lib/types';
+import { GameDefinition, GameEvent } from '@/lib/types';
 import { useAppStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { TutorialModal } from '@/components/TutorialModal';
 import { GameHUD } from '@/components/GameHUD';
-import { ArrowLeft, Play, RotateCcw } from 'lucide-react';
+import { ArrowLeft, Play } from 'lucide-react';
 
 interface GameHostProps {
   game: GameDefinition;
@@ -17,7 +17,7 @@ interface GameHostProps {
 export function GameHost({ game, onBack }: GameHostProps) {
   const {
     gameState,
-    showTutorial,
+    
     setCurrentGame,
     updateGameState,
     resetGameState,

@@ -29,10 +29,11 @@ export type GameDefinition = {
   controls: { mouse: boolean; touch: boolean; keyboard: boolean };
   tutorialSteps: string[];
   levels: number;
-  init: () => GameState;
-  update: (state: GameState, event: GameEvent) => GameState;
-  render: (state: GameState, onEvent: (event: GameEvent) => void) => ReactNode;
-  assessMastery: (state: GameState) => boolean;
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  init: () => any;
+  update: (state: any, event: GameEvent) => any;
+  render: (state: any, onEvent: (event: GameEvent) => void) => ReactNode;
+  assessMastery: (state: any) => boolean;
 };
 
 export type User = {

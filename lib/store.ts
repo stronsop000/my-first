@@ -31,8 +31,8 @@ interface AppStore {
   prevTutorialStep: () => void;
 
   // Analytics (local storage)
-  trackEvent: (event: { type: string; gameId?: string; data?: any }) => void;
-  events: any[];
+  trackEvent: (event: { type: string; gameId?: string; data?: unknown }) => void;
+  events: unknown[];
 
   // Initialize default user
   initializeUser: () => void;

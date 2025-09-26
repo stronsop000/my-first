@@ -272,7 +272,7 @@ export const elasticityExplorerDefinition: GameDefinition = {
             newQuantity = (100 - newPrice) / 2;
           }
 
-          return state.update(state, {
+          return elasticityExplorerDefinition.update(state, {
             type: 'action',
             name: 'move-point',
             payload: { price: newPrice, quantity: newQuantity }
