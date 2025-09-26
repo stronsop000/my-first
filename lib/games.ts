@@ -1,9 +1,11 @@
 import { GameDefinition } from './types';
+import { compound2048Definition } from '../games/compound-2048/definition';
 import { npvBuilderDefinition } from '../games/npv-builder/definition';
 import { budgetBattleDefinition } from '../games/budget-battle/definition';
 import { elasticityExplorerDefinition } from '../games/elasticity-explorer/definition';
 
 export const GAMES: GameDefinition[] = [
+  compound2048Definition,
   npvBuilderDefinition,
   budgetBattleDefinition,
   elasticityExplorerDefinition
